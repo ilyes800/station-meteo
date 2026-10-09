@@ -1,30 +1,38 @@
 # Worldwide Weather Watcher
 
-**Projet de systèmes embarqués · CESI · Deuxième année**
+**Systèmes embarqués · CESI · Deuxième année**
 
 ## Objectif
 
-Concevoir un prototype de station météo embarquée capable d’acquérir des mesures, de les horodater et de les enregistrer sur carte SD. Le projet s’inscrit dans un scénario de surveillance météorologique en mer.
+Concevoir une station météo embarquée capable de relever des données, de les horodater et de les enregistrer, dans un scénario de surveillance météorologique en mer.
 
-## Fonctionnement
+## Réalisation
 
-La station décrite dans les livrables utilise un capteur BME280 pour mesurer la température, l’humidité et la pression. Elle associe également un capteur de luminosité, un GPS et une horloge RTC. Des boutons et une LED RGB permettent de choisir le mode de fonctionnement et de signaler l’état du système.
+Conception d’un système Arduino associant des capteurs de température, d’humidité, de pression et de luminosité, un GPS, une horloge et une carte SD. Des boutons et une LED signalent l’état du système et permettent d’interagir avec ses modes.
 
-| Mode | Utilité |
+| Mode | Fonction |
 | --- | --- |
 | Standard | Acquérir et enregistrer les mesures. |
-| Configuration | Régler les paramètres et les conserver en EEPROM. |
-| Économique | Espacer les acquisitions et réduire l’activité de certains composants. |
-| Maintenance | Diagnostiquer les erreurs et vérifier les composants. |
+| Configuration | Régler et mémoriser les paramètres. |
+| Économique | Espacer les acquisitions pour limiter l’activité des composants. |
+| Maintenance | Vérifier les composants et diagnostiquer les erreurs. |
 
-## Technologies
+## Résultat présenté
 
-Arduino, modules Grove, BME280, GPS, RTC, carte SD, EEPROM. Bibliothèques documentées : `Adafruit_BME280`, `TinyGPSPlus`, `SoftwareSerial`, `RTClib`, `SD.h` et `ChainableLED`.
+Une conception documentée de la station : choix des composants, organisation des quatre modes et diagrammes de fonctionnement. Le projet relie les mesures des capteurs, leur datation et leur stockage.
 
-## Finalité du projet
+Le bilan technique identifie une limite de ressources de l’Arduino Uno sur la fonction de mesure. Il propose d’optimiser le programme ou d’adapter la carte : une occasion de prendre en compte les contraintes réelles du matériel.
 
-Relier la conception d’un système embarqué à son fonctionnement concret : acquisition des données, gestion de plusieurs modes, stockage et diagnostic. La conception s’appuie sur des diagrammes de cas d’utilisation, d’activité et de séquence.
+## Compétences acquises
 
-Cette présentation synthétise les livrables du projet. Le programme Arduino sera ajouté au dépôt lorsqu’il sera disponible. Le rapport identifie une limite de ressources sur Arduino Uno dans la fonction de mesure, avec une optimisation du programme ou un changement de carte comme pistes d’amélioration.
+- Analyser un besoin et choisir des composants adaptés.
+- Comprendre les échanges entre capteurs, programme et stockage.
+- Organiser le comportement d’un système en plusieurs modes.
+- Modéliser les interactions avec des diagrammes UML.
+- Identifier les contraintes de mémoire et les pistes d’amélioration d’un prototype.
 
-[Mon profil](https://github.com/ilyes800)
+**Outils :** Arduino, modules Grove, BME280, GPS, RTC, carte SD, EEPROM et UML.
+
+*Présentation fondée sur les livrables du projet.*
+
+[Retour au profil et au CV](https://github.com/ilyes800)
